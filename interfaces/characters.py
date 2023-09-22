@@ -1,0 +1,8 @@
+class CustomCharacters:
+    SCROLL_UP_LABEL = {"bytes": [0x0E, 0x0A, 0x0E, 0x0A, 0x0E, 0x00, 0x04, 0x0E]}
+
+    SCROLL_DOWN_LABEL = {"bytes": [0x0E, 0x04, 0x00, 0x0E, 0x0A, 0x0E, 0x02, 0x02]}
+
+    CHARACTERS = [SCROLL_UP_LABEL, SCROLL_DOWN_LABEL]
+    for i in range(len(CHARACTERS)):
+        CHARACTERS[i]["index"] = i
